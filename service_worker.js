@@ -42,26 +42,6 @@ chrome.action.onClicked.addListener(async(tab)=>{
       platform
     };
     await chrome.storage.sync.set({[url]:problemDetails});
-    // const data=await chrome.storage.sync.get(null);
-    //it will return object of key value pair
-    // console.log("updated storage: ");
-    // console.log(typeof(data));
-    // const arrData=Object.entries(data);
-    //we will get array like this
-    //[[url,data],[kay,value]]
-    // console.log(arrData);
-    /*
-    iterating over data from sync storage area
-    arrData.forEach((item)=>{
-      //accessing url of problem
-      console.log(item[0]);
-      //accessing the problemDetails object
-      for(let key in item[1]){
-        console.log(key+" "+item[1][key]);
-      }
-    })
-      */
-
   }catch(err){
     console.log(err);
   }
