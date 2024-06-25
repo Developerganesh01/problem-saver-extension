@@ -1,0 +1,19 @@
+{
+  "manifest_version":3,
+  "name":"problem-saver-extention",
+  "version":"1.1",
+  "description":"Maintain list of important problems from leetcode platform",
+  "icons":{
+    "16":"images/icon_16.png",
+    "32":"images/icon_32.png",
+    "48":"images/icon_48.png",
+    "128":"images/icon_128.png"
+  },
+  "action":{
+    "default_title":"add problem"
+  },
+  "permissions":["activeTab","scripting","storage","contextMenus"],
+  "background":{
+    "service_worker": "service_worker.js"
+  }
+}
