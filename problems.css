@@ -1,0 +1,97 @@
+:root{
+  --color-primary-1:#eb2f64;
+ --color-primary-light-1:#FF3366;
+ --color-primary-dark-1:#BA265D;
+
+ --color-primary-2:#55c57a;
+ --color-primary-light-2:#7ed56f;
+ --color-primary-dark-2:#28b485;
+
+ --color-secondary-light:#ffb900;
+ --color-secondary-dark:#ff7730;
+
+ --color-tertiary-light:#2998ff;
+ --color-tertiary-dark:#5643fa; 
+
+ --color-grey-light-1:#faf9f9;
+ --color-grey-light-2:#f4f2f2;
+ --color-grey-light-3:#f0eeee;
+ --color-grey-light-4:#ccc;
+
+
+ --color-grey-dark-1:#333;
+ --color-grey-dark-2:#777;
+ --color-grey-dark-3:#999;
+}
+*,*::after,*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body{
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+.container{
+  margin: 1rem;
+  min-height: 92vh;
+  padding: 5rem;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+}
+.problem-container{
+  display: grid;
+  grid-template-columns:3fr 2fr 1fr;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+  border: 0.1rem solid #ccc;
+}
+.problem-container__title-box{
+  /* border: 0.2rem solid black; */
+  padding: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transform: translateX(3rem);
+  
+}
+.problem-container__link,.problem-container__link:active,.problem-container__link:visited{
+  text-decoration: none;
+  color: #000;
+  
+}
+.problem-container__img{
+  /* border: 0.2rem solid black; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.problem-container__platform-info{
+  /* border: 0.2rem solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.problem-container:hover{
+  transform: scale(1.01);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.no-data-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  letter-spacing: 0.4rem;
+  font-size: 5rem;
+}
+.hidden{
+  display: none;
+}
+.remove-problem{
+cursor: pointer;
+}
