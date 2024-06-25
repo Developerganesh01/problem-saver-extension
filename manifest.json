@@ -1,6 +1,6 @@
 {
   "manifest_version":3,
-  "name":"problem-saver-extention",
+  "name":"problem-saver-extension",
   "version":"1.1",
   "description":"Maintain list of important problems from leetcode platform",
   "icons":{
